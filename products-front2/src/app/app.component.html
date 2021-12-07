@@ -1,0 +1,21 @@
+<h1>Products</h1>
+
+<ul>
+  <li *ngFor="let product of products" (click)="productClicked(product)">
+    {{ product.id }} - {{ product.name }} {{ product.description}}
+    
+  </li>
+</ul>
+
+
+<!-- <p>
+  {{ selected_product.id}}
+</p> <br>
+<p>
+  {{ selected_product.name}}
+</p> <br>
+<p>
+  {{ selected_product.description}}
+</p> <br> -->
+
+<router-outlet></router-outlet>
