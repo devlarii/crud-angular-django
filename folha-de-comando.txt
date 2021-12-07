@@ -1,0 +1,16 @@
+angular
+
+npm install -g @angular/cli
+ng new products
+cd products
+ng server
+ng generate service api
+ng g c products-detail (g= generate c= components)
+ng generate service api
+
+Django
+django-admin startproject myproject
+python manage.py migrate / criar o banco de dados
+python manage.py createsuperuser
+python manage.py runserver
+python manage.py start app appname
