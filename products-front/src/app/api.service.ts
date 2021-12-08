@@ -23,4 +23,8 @@ export class ApiService {
     return this.http.get(this.baseUrl + 'products/' + id + '/',
     {headers: this.httpHeaders})
   };
+  saveNewProduct(product: { name: string; description: string; price: string; }) : Observable<any>{
+    return this.http.post(this.baseUrl + 'products/', product,
+    {headers: this.httpHeaders})
+  };
 }

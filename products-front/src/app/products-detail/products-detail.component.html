@@ -1,3 +1,13 @@
 <h1>Product detail component
 </h1>
 Produto Carregado: {{ selected_product.name }} - {{ selected_product.description }}
+
+<p>Selected id = {{ selected_id }}</p>
+
+<input type="text" [(ngModel)]="selected_product.id">
+<input type="text" [(ngModel)]="selected_product.name">
+<input type="text" [(ngModel)]="selected_product.price">
+<button (click)="update()">Atualizar Produto</button>
+<button (click)="delete()">Deletar</button>
+
+<button (click)="newProduct()">Novo</button>

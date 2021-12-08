@@ -1,6 +1,7 @@
 import { ApiService } from './api.service';
 import { Component } from '@angular/core';
 import { throwError } from 'rxjs';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -33,7 +34,7 @@ export class AppComponent {
     },
   ];
 
-  constructor(private api: ApiService) {
+  constructor(private api: ApiService, private router: Router) {
     this.getProducts();
   }
 
@@ -50,17 +51,7 @@ export class AppComponent {
   }
 
   productClicked = (product: { id: number; }) => {
-    this.api.getPorduct(product.id).subscribe({
-      next: data => {
-        console.log(data);
-        this.selected_product = data
-        // this.products = data
-      },
-      error: error => {
-        console.log("aconteceu um erro", error.message)
-        
-      }
-    })   
+    this.router.navigate(['product-detail', product.id]);
       
     
   

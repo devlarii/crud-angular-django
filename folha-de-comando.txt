@@ -14,3 +14,7 @@ python manage.py migrate / criar o banco de dados
 python manage.py createsuperuser
 python manage.py runserver
 python manage.py start app appname
+
+python -m pip install django-cors-headers
+pip install pytz
+python -m pip install Pillow
