@@ -15,6 +15,8 @@ python manage.py createsuperuser
 python manage.py runserver
 python manage.py start app appname
 
+python4 -m pip install Django
+
 python -m pip install django-cors-headers
 pip install pytz
 python -m pip install Pillow
