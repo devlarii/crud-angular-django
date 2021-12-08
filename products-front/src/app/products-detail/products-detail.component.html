@@ -1,13 +1,26 @@
-<h1>Product detail component
-</h1>
-Produto Carregado: {{ selected_product.name }} - {{ selected_product.description }}
+<h3>Detalhes do Produto</h3>
+<span>Você está editando: </span> <strong>{{ selected_product.name }}</strong>
+<br />
+{{ selected_product.description }}
 
-<p>Selected id = {{ selected_id }}</p>
 
-<input type="text" [(ngModel)]="selected_product.id">
-<input type="text" [(ngModel)]="selected_product.name">
-<input type="text" [(ngModel)]="selected_product.price">
-<button (click)="update()">Atualizar Produto</button>
-<button (click)="delete()">Deletar</button>
+    <span class="image left">
+        <img
+          src="{{ selected_product.photo }}"
+          alt="Foto de {{ selected_product.name }}"
+        />
+      </span>
 
-<button (click)="newProduct()">Novo</button>
+
+
+ 
+  <input type="text" [(ngModel)]="selected_product.id" readonly /><br />
+  <label for="">Nome</label>
+  <input type="text" [(ngModel)]="selected_product.name" /><br />
+  <label for="">Preço R$</label>
+  <input type="text" [(ngModel)]="selected_product.price" /><br />
+  <button (click)="update()" class="button">Atualizar Produto</button>
+  <button (click)="delete()" class="button">Deletar</button>
+
+  <button (click)="newProduct()" class="button primary">Novo</button>
+

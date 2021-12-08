@@ -1,12 +1,20 @@
-<h1>Products</h1>
-
-<ul>
-  <li *ngFor="let product of products" (click)="productClicked(product)">
-    {{ product.id }} - {{ product.name }} {{ product.description}}
-    
-  </li>
-</ul>
-
+<h3>Produtos</h3>
+<table class="alt">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Nome</th>
+      <th>Preço</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let product of products" (click)="productClicked(product)">
+      <td>{{ product.id }}</td>
+      <td>{{ product.name }}</td>
+      <td>{{ product.price }}</td>
+    </tr>
+  </tbody>
+</table>
 
 <!-- <p>
   {{ selected_product.id}}
@@ -17,5 +25,4 @@
 <p>
   {{ selected_product.description}}
 </p> <br> -->
-
 <router-outlet></router-outlet>

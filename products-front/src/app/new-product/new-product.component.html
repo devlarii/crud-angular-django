@@ -1,7 +1,11 @@
 <h1>Novo Produto</h1>
 
-<input type="text" [(ngModel)]="product.name">
-<input type="text" [(ngModel)]="product.description">
-<input type="text" [(ngModel)]="product.price">
-<button (click)="save()">Salvar</button>
+<label for="">Nome</label>
+<input type="text" [(ngModel)]="product.name"><br>
+<label for="">Descrição do Produto</label>
+<input type="text" [(ngModel)]="product.description"><br>
+<label for="">Preço R$</label>
+<input type="text" [(ngModel)]="product.price"><br>
+
+<button (click)="save()" class="button primary">Salvar</button>
 

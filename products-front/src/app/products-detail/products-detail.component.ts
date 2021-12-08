@@ -12,7 +12,7 @@ import { ApiService } from './api.service';
 })
 export class ProductsDetailComponent implements OnInit {
   constructor(private route: ActivatedRoute, private api: ApiService, private router: Router, private appComponent: AppComponent) {}
-  selected_product = { id: 0, name: '', description: '', price: '' };
+  selected_product = { id: 0, name: '', description: '', price: '', photo: '' };
   selected_id: number | undefined;
 
   ngOnInit(): void {

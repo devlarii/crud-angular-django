@@ -11,25 +11,28 @@ import { Router } from '@angular/router';
 export class AppComponent {
   title = 'products-front';
 
-  selected_product = {id: 0, name: '', description: ''}
+  selected_product = {id: 0, name: '', description: '', price: '', photo: ''}
   
   products = [
     {
       name: 'Product 01',
       id: 1,
       description: 'tenis',
+      price: 'R$ 29.99',
       photo: 'http://www.minhapp.com/photo1',
     },
     {
       name: 'Product 02',
       id: 2,
       description: 'sapato',
+      price: 'R$ 29.99',
       photo: 'http://www.minhapp.com/photo2',
     },
     {
       name: 'Product 03',
       id: 3,
       description: 'alpergata',
+      price: 'R$ 29.99',
       photo: 'http://www.minhapp.com/photo3',
     },
   ];

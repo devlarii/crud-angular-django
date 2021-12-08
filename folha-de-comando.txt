@@ -3,7 +3,7 @@ angular
 npm install -g @angular/cli
 ng new products
 cd products
-ng server
+ng serve
 ng generate service api
 ng g c products-detail (g= generate c= components)
 ng generate service api
