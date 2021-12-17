@@ -28,6 +28,6 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 <img src="https://firebasestorage.googleapis.com/v0/b/fpf-loja-7b558.appspot.com/o/Screenshot%202021-12-08%20160638.png?alt=media&token=0433dd5d-3963-405d-a900-7e405a2038da" alt="Detalhes do Produto" />
 <br>
 
-<p align="center">Desenvolvido com 💜 por Hpzynha</p>
+<p align="center">Desenvolvido com 💜 por Larissa Rocha</p>
 
 
