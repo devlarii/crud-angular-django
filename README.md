@@ -13,7 +13,7 @@
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- [Python](https://www.python.org/)
+
 - [Angular](https://angular.io/)
 - [Django](https://www.djangoproject.com/)
 
